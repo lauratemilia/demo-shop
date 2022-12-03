@@ -1,20 +1,49 @@
 import React from 'react';
-// importam componenta Layout, in loc sa importam si header-ul si footer-ul.
 import Layout from '../components/Layout';
+import products from '../utils/products.json';
+import HomeCategory from '../components/HomeCategory';
 
-function Home(props) {
-    // Pentru ca Home este inclusa intr-o componenta de tip Route, va contine 3 prop-uri in plus:
-    // match, history, location. Uitati-va in consola pentru a vedea ce contine fiecare.
-    console.log(props);
+class Home extends React.Component{
 
-    return(
-        <div>
-            {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
-            <Layout>
-                <h1>Home</h1>
-            </Layout>
-        </div>
-    );
+    constructor() {
+        super();
+        this.state = {
+            categories: []
+        }
+    }
+
+    componentDidMount() {        
+        const categories = Object.keys(products);      
+        this.setState({categories});
+    }
+
+    render(){
+        return(
+            <div>
+                {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
+                <Layout>
+                <div className="container-fluid container-min-max-width">
+                    {/* row vine la pachet cu col-6. Vezi grid-ul bootstrap pentru detalii! */}
+                    <div className="row">
+                        {/* Pentru fiecare categorie, cream o componenta HomeCategory */}
+                        {this.state.categories.map((category, index) =>
+                            <HomeCategory
+                                key={index}
+                                // ATENTIE! Atunci cand proprietatea unui obiect este tinuta intr-o variabila, ea
+                                // trebuie accesata cu sintaxa: obiect[variabila]. products[category] e echivalentul
+                                // lui products.shoes, in ecemplus de mai jos.
+                                route={category}
+                                name={products[category].name}
+                                description={products[category].description}
+                                image={products[category].image}
+                            />
+                        )}
+                    </div>
+                </div>
+                </Layout>
+            </div>
+        );
+    }
 }
 
 export default Home;

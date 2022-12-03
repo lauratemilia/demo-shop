@@ -1,0 +1,5 @@
+/* Redimensionam logo-ul */
+header .logo {
+    width: 150px;
+    height: auto;
+}
