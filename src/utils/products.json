@@ -1,5 +1,5 @@
 {
-    "shoes": {
+    "leadership": {
         "items": [
             {
                 "id": 1,
@@ -38,11 +38,11 @@
                 "description": "Ghete maro din piele, din colecția de toamnă-iarnă 2017, Massimo Dutti."
             }
         ],
-        "image": "https://i.imgur.com/X0qldXO.jpg",
-        "name": "Încălțăminte",
-        "description": "Ghete, pantofi, sneakerși: finețe garantată!"
+        "image": "https://imgpile.com/images/bWSIiF.jpg",
+        "name": "Leadership",
+        "description": "Leadership, both as a research area and as a practical skill, encompasses the ability of an individual, group or organization to \"lead\", influence or guide other individuals, teams, or entire organizations."
     },
-    "sweaters": {
+    "communication": {
         "items": [
             {
                 "id": 4,
@@ -93,11 +93,11 @@
                 "description": "Pulovăr din lână cu model, colecția toamnă-iarnă 2019, Massimo Dutti."
             }
         ],
-        "image": "https://i.imgur.com/SZU7liE.jpg",
-        "name": "Pulovere",
-        "description": "Pulovărașe elegănțele, slim, clasă superioară."
+        "image": "https://imgpile.com/images/bWpaZ8.png",
+        "name": "Communication",
+        "description": "Communication is usually defined as the transmission of information. The term may also refer to the message communicated through such transmissions or the field of inquiry studying them."
     },
-    "pants": {
+    "empathy": {
         "items": [
             {
                 "id": 8,
@@ -124,11 +124,11 @@
                 "description": "Blugi negri, slim fit, colecția toamnă-iarnă 2019, DS Damat."
             }
         ],
-        "image": "https://i.imgur.com/srQCDRN.jpg",
-        "name": "Pantaloni/blugi",
-        "description": "Jeanși și pantaloni pentru baieții care și-o ard patroni!"
+        "image": "https://imgpile.com/images/bWSu0i.jpg",
+        "name": "Empathy",
+        "description": "Empathy is the capacity to understand or feel what another person is experiencing from within their frame of reference, that is, the capacity to place oneself in another's position"
     },
-    "jackets": {
+    "teamwork": {
         "items": [
             {
                 "id": 10,
@@ -155,11 +155,11 @@
                 "description": "Geacă bleumarin cu glugă detașabilă, colecția toamnă-iarnă 2019, DS Damat."
             }
         ],
-        "image": "https://i.imgur.com/81I6Oab.jpg",
-        "name": "Geci/Haine",
-        "description": "Confortabile, călduroase și nu arăți ca un cartof!"
+        "image": "https://imgpile.com/images/bWSwqM.jpg",
+        "name": "Teamwork",
+        "description": "Teamwork is the collaborative effort of a group to achieve a common goal or to complete a task in the most effective and efficient way."
     },
-    "tshirts": {
+    "critical-thinking": {
         "items": [
             {
                 "id": 12,
@@ -198,11 +198,11 @@
                 "description": "Tricoul purtat de Borussia Dortmund în sezonul competițional 2018-2019, cu numarul 7 și numele 'SANCHO'. Tricoul este semnat de portarul Borussiei, Roman Burki."
             }
         ],
-        "image": "https://i.imgur.com/l27WtFL.jpg",
-        "name": "Tricouri",
-        "description": "Și de băiețeală și de sport."
+        "image": "https://imgpile.com/images/bWpyr3.jpg",
+        "name": "Critical Thinking",
+        "description": "Critical thinking is the analysis of available facts, evidence, observations, and arguments to form a judgement."
     },
-    "accesories": {
+    "creativity": {
         "items": [
             {
                 "id": 15,
@@ -229,8 +229,256 @@
                 "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
             }
         ],
-        "image": "https://i.imgur.com/qw3wDj8.jpg",
-        "name": "Accesorii",
-        "description": "Fulare, căciuli, mănuși: nu mai sta pe gânduri, cumpără-le acuși!"
+        "image": "https://imgpile.com/images/bWpjhb.jpg",
+        "name": "Creativity",
+        "description": "Creativity is a broad soft skill that can range from helping you develop innovative solutions to being an effective graphic designer."
+    },    
+    "problem-solving": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWSN1u.jpg",
+        "name": "Problem Solving",
+        "description": "Problem solving skills depend on your ability to use analytical and creative thinking to find solutions."
+    },
+    "adaptability": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWSdva.jpg",
+        "name": "Adaptability",
+        "description": "Adaptability and flexibility are essential skills for embracing and adjusting to change. Change is the only constant."
+    },
+    "time-management": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWS5a4.jpg",
+        "name": "Time Management",
+        "description": "The process of planning and exercising conscious control of time spent on specific activities, especially to increase effectiveness, efficiency, and productivity."
+    },
+    "conflict-resolution": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWpZoS.jpg",
+        "name": "Conflict Resolution",
+        "description": "Conflict resolution can be defined as the informal or formal process that two or more parties use to find a peaceful solution to their dispute."
+    },
+    "decision-making": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWS4vl.jpg",
+        "name": "Decision Making",
+        "description": " the cognitive process resulting in the selection of a belief or a course of action among several possible alternative options."
+    },
+    "active-listening": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWSTh2.jpg",
+        "name": "Active Listening",
+        "description": "The practice of preparing to listen, observing what verbal and non-verbal messages are being sent, and then providing appropriate feedback for the sake of showing attentiveness to the message being presented. This form of listening conveys a mutual understanding between speaker and listener."
+    },
+    "persuasion": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWSu0i.jpg",
+        "name": "Persuasion",
+        "description": "An umbrella term for influence. Persuasion can influence a person's beliefs, attitudes, intentions, motivations, or behaviours."
+    },
+    "project-management": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Fular TJ cu două fețe",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/rSVUiLO.jpg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Cașmir",
+                "brand": "Trussardi Jeans",
+                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+            },
+            {
+                "id": 16,
+                "name": "Mănuși din piele",
+                "price": 60,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LbjGaZ1.jpg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "DS Damat",
+                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+            }
+        ],
+        "image": "https://imgpile.com/images/bWSUxk.jpg",
+        "name": "Project Management",
+        "description": "The process of leading the work of a team to achieve all project goals within the given constraints. "
     }
 }

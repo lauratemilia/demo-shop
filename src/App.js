@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Category from './pages/Category';
 import Home from './pages/Home';
 import About from './pages/About';
+import Terms from './pages/Terms';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Page404 from './pages/Page404';
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route path='/login' component={Login}/>
           <Route path='/register' component={Register}/>           
           <Route path='/about' component={About}/>    
+          <Route path='/terms-and-conditions' component={Terms}/>    
           <Route path='/category/:categoryName' component={Category}/>     
           <Route path='*' component={Page404}/>
         </Switch>

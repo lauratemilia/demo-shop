@@ -31,7 +31,7 @@ class Home extends React.Component{
                                 key={index}
                                 // ATENTIE! Atunci cand proprietatea unui obiect este tinuta intr-o variabila, ea
                                 // trebuie accesata cu sintaxa: obiect[variabila]. products[category] e echivalentul
-                                // lui products.shoes, in ecemplus de mai jos.
+                                // lui products.shoes, in exemplus de mai jos.
                                 route={category}
                                 name={products[category].name}
                                 description={products[category].description}

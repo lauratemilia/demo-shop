@@ -16,3 +16,27 @@ Header si footer sunt tag-uri de html separate, deci targetam continutul */
     ca acest continut sa acopere spatiul, daca acesta exista. */
     flex-grow: 1;
 }
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: DauphinPlain;
+}
+
+p {
+    text-align: justify;
+    margin: 0 0 15px 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

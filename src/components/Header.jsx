@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 // Importam logo-ul.
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/etna-logo.png';
 // SVG-urile se importa diferit de imagini! (Google: how to import SVG in React)
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 import './Header.css';
