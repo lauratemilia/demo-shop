@@ -1,0 +1,7 @@
+@font-face {font-family: "Ingleby"; src: url("//db.onlinewebfonts.com/t/7e681923603ebe90c9494326bb313702.eot"); src: url("//db.onlinewebfonts.com/t/7e681923603ebe90c9494326bb313702.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7e681923603ebe90c9494326bb313702.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7e681923603ebe90c9494326bb313702.woff") format("woff"), url("//db.onlinewebfonts.com/t/7e681923603ebe90c9494326bb313702.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7e681923603ebe90c9494326bb313702.svg#Ingleby") format("svg"); }
+
+#productList h2 {
+    font-weight: 400;
+    font-size: 4em;
+    font-family: Ingleby;
+}

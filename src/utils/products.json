@@ -10,7 +10,8 @@
                 "image": "https://imgpile.com/images/bWSIiF.jpg",   
                 "duration": 6,            
                 "offeredBy": "Massimo Dutti",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 2,
@@ -20,7 +21,8 @@
                 "image": "https://imgpile.com/images/bWSIiF.jpg",
                 "duration": 6,  
                 "offeredBy": "Polo Ralph Lauren",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 3,
@@ -30,7 +32,8 @@
                 "image": "https://imgpile.com/images/bWSIiF.jpg",
                 "duration": 6,  
                 "offeredBy": "Massimo Dutti",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSIiF.jpg",
@@ -48,7 +51,8 @@
                 "image": "https://imgpile.com/images/bWpaZ8.png",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 5,
@@ -58,7 +62,8 @@
                 "image": "https://imgpile.com/images/bWpaZ8.png",
                 "duration": 6,  
                 "offeredBy": "McNeal",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 6,
@@ -68,7 +73,8 @@
                 "image":"https://imgpile.com/images/bWpaZ8.png",
                 "duration": 6,  
                 "offeredBy": "SELECTED",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 7,
@@ -78,7 +84,8 @@
                 "image": "https://imgpile.com/images/bWpaZ8.png",
                 "duration": 6,  
                 "offeredBy": "Massimo Dutti",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWpaZ8.png",
@@ -96,7 +103,8 @@
                 "image": "https://imgpile.com/images/bWS1ww.png",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 9,
@@ -106,7 +114,8 @@
                 "image": "https://imgpile.com/images/bWS1ww.png",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWS1ww.png",
@@ -124,7 +133,8 @@
                 "image": "https://imgpile.com/images/bWSwqM.jpg",
                 "duration": 6,  
                 "offeredBy": "Peek and Cloppenburg",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 11,
@@ -134,7 +144,8 @@
                 "image": "https://imgpile.com/images/bWSwqM.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSwqM.jpg",
@@ -152,7 +163,8 @@
                 "image": "https://imgpile.com/images/bWpyr3.jpg",
                 "duration": 6,  
                 "offeredBy": "Lacoste",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 13,
@@ -162,7 +174,8 @@
                 "image": "https://imgpile.com/images/bWpyr3.jpg",
                 "duration": 6,  
                 "offeredBy": "Li Ning",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 14,
@@ -172,7 +185,8 @@
                 "image": "https://imgpile.com/images/bWpyr3.jpg",  
                 "duration": 6,  
                 "offeredBy": "Puma",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWpyr3.jpg",
@@ -200,7 +214,8 @@
                 "image": "https://imgpile.com/images/bWpjhb.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWpjhb.jpg",
@@ -228,7 +243,8 @@
                 "image": "https://imgpile.com/images/bWSN1u.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSN1u.jpg",
@@ -256,7 +272,8 @@
                 "image":"https://imgpile.com/images/bWSdva.jpg",
                 "duration": 6, 
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSdva.jpg",
@@ -274,7 +291,8 @@
                 "image": "https://imgpile.com/images/bWS5a4.jpg",
                 "duration": 6,  
                 "offeredBy": "Trussardi Jeans",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 22,
@@ -284,7 +302,8 @@
                 "image": "https://imgpile.com/images/bWS5a4.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWS5a4.jpg",
@@ -302,7 +321,8 @@
                 "image": "https://imgpile.com/images/bWpZoS.jpg",
                 "duration": 6,  
                 "offeredBy": "Trussardi Jeans",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 24,
@@ -312,7 +332,8 @@
                 "image": "https://imgpile.com/images/bWpZoS.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWpZoS.jpg",
@@ -330,7 +351,8 @@
                 "image": "https://imgpile.com/images/bWS4vl.jpg",
                 "duration": 6,  
                 "offeredBy": "Trussardi Jeans",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 26,
@@ -340,7 +362,8 @@
                 "image": "https://imgpile.com/images/bWS4vl.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWS4vl.jpg",
@@ -358,7 +381,8 @@
                 "image": "https://imgpile.com/images/bWSTh2.jpg",
                 "duration": 6,  
                 "offeredBy": "Trussardi Jeans",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 28,
@@ -368,7 +392,8 @@
                 "image": "https://imgpile.com/images/bWSTh2.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSTh2.jpg",
@@ -386,7 +411,8 @@
                 "image": "https://imgpile.com/images/bWSu0i.jpg",
                 "duration": 6,  
                 "offeredBy": "Trussardi Jeans",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 30,
@@ -396,7 +422,8 @@
                 "image": "https://imgpile.com/images/bWSu0i.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 31,
@@ -406,7 +433,8 @@
                 "image": "https://imgpile.com/images/bWSu0i.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSu0i.jpg",
@@ -424,7 +452,8 @@
                 "image": "https://imgpile.com/images/bWSUxk.jpg",
                 "duration": 6,  
                 "offeredBy": "Trussardi Jeans",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             },
             {
                 "id": 33,
@@ -434,7 +463,8 @@
                 "image": "https://imgpile.com/images/bWSUxk.jpg",
                 "duration": 6,  
                 "offeredBy": "DS Damat",
-                "description": "tbd"
+                "description": "tbd",
+                "skills":[]
             }
         ],
         "image": "https://imgpile.com/images/bWSUxk.jpg",

@@ -1,0 +1,37 @@
+.product-item img {
+    max-width: 100%;
+    max-height: 250px;
+}
+#details{
+    width: 100%;
+}
+
+#price {
+    width: 15%;
+    float: right;
+}
+
+#skills {
+    width: 74%;
+}
+
+#skills span {
+    font-weight: 600;
+}
+
+#details div {
+    display: inline-block;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .col-4 {
+     width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .col-4 {
+        width: 100%;
+       }
+}
