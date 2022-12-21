@@ -18,9 +18,7 @@ function Login() {
           return;
         }
         if (user) navigate("/dashboard");
-        return () => {
-          //setState({}); // This worked for me
-        };
+        return () => {};
         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [user, loading]);
 
