@@ -1,7 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Layout from '../components/Layout';
 import products from '../utils/products.json';
-import HomeCategory from '../components/HomeCategory';
+import "./Home.css";
 
 class Home extends React.Component{
 
@@ -22,22 +23,23 @@ class Home extends React.Component{
             <div>
                 {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
                 <Layout>
-                <div className="container-fluid container-min-max-width">
+                <div id="home-menu" className="container-fluid container-min-max-width">
                     {/* row vine la pachet cu col-6. Vezi grid-ul bootstrap pentru detalii! */}
                     <div className="row">
-                        {/* Pentru fiecare categorie, cream o componenta HomeCategory */}
-                        {this.state.categories.map((category, index) =>
-                            <HomeCategory
-                                key={index}
-                                // ATENTIE! Atunci cand proprietatea unui obiect este tinuta intr-o variabila, ea
-                                // trebuie accesata cu sintaxa: obiect[variabila]. products[category] e echivalentul
-                                // lui products.shoes, in exemplus de mai jos.
-                                route={category}
-                                name={products[category].name}
-                                description={products[category].description}
-                                image={products[category].image}
-                            />
-                        )}
+                        <Link to={`/categories`}>
+                            <div className="w-100">
+                                <img src="https://imgpile.com/images/b3FKDM.jpg" alt="categories" className="w-100"/>
+                            </div>
+                            <h2 className="h4 my-1"><strong>Categories</strong></h2>                
+                        </Link>
+
+                        <Link to={`/all`}>
+                            <div className="w-100">
+                                <img src="https://imgpile.com/images/b3Ftjk.jpg" alt="all" className="w-100"/>
+                            </div>
+                            <h2 className="h4 my-1"><strong>All Our Courses</strong></h2>                
+                        </Link>
+                        
                     </div>
                 </div>
                 </Layout>

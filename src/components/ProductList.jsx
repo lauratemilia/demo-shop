@@ -5,20 +5,19 @@ import './ProductList.css';
 
 function ProductList(props){
 
-    const { products } = props;
-
+    const { items } = props;   
+   
     return(
-        <div className="row mb-4">
-            {
-                products.map((product) => {
-                    return <ProductItem 
-                        {...product}
-                        key = {product.id}
-                    />
-                })
-            }   
-        </div>
-        
+            <div className="row mb-4">
+                {
+                    items.map((item) => {
+                        return <ProductItem 
+                            {...item}
+                            key = {item.id}
+                        />
+                    })
+                }   
+            </div>
     );
 }
 

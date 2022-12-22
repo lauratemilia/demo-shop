@@ -17,9 +17,8 @@ function Login() {
           // maybe trigger a loading screen
           return;
         }
-        if (user) navigate("/dashboard");
+        if (user) navigate("/");
         return () => {};
-        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [user, loading]);
 
     return(

@@ -38,7 +38,7 @@ function Header() {
                    <div className="d-flex justify-content-end">
                     {
                         user 
-                        ? <a className="logout h5" onClick={handleSignOut}>Logout</a> 
+                        ? <a href="/" className="logout h5" onClick={handleSignOut}>Logout</a> 
                         : <Link to="/login" className="h5">Login</Link>
                     }
                   
