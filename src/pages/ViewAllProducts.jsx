@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import products from '../utils/products.json'
 import ProductsListWithFilter from '../components/ProductsListWithFilter';
 import { useParams } from "react-router-dom";
-import { Resource } from 'react-admin';
 import BaseListSidebar from '../components/BaseListSidebar';
 import "./ViewAllProducts.css";
 
