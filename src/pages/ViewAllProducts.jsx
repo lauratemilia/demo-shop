@@ -4,6 +4,8 @@ import products from '../utils/products.json'
 import ProductsListWithFilter from '../components/ProductsListWithFilter';
 import { useParams } from "react-router-dom";
 import { Resource } from 'react-admin';
+import BaseListSidebar from '../components/BaseListSidebar';
+import "./ViewAllProducts.css";
 
 
 /**
@@ -44,10 +46,13 @@ class ViewAllProducts extends Component {
         <div>
             {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
             <Layout>
-            <div id = "productList" className="container-fluid container-min-max-width">
-                {/* <ProductsListWithFilter {...this.state} /> */}
-                    <Resource name="products" list={<ProductsListWithFilter {...this.state} />} />
-                </div>
+           <div>
+              <div id="sidebar"><BaseListSidebar {...this.state}/></div>  
+                <div id = "productList" className="container-fluid container-min-max-width">
+                    <ProductsListWithFilter {...this.state} />                    
+            </div>
+
+           </div>
             </Layout>
         </div>
     );

@@ -1,0 +1,26 @@
+
+#sidebar {
+    width: 17%;
+    float: left;
+    margin-left: 10px;
+}
+
+#productList {
+    width: 74%;
+}
+
+.filter-type div {
+    margin-left: 10px;
+
+}
+
+.filter-type div input {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    float: left;
+}
+
+.filter-type span {
+    font-weight: 600;
+}
