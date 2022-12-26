@@ -3,7 +3,6 @@ import ProductItem from "./ProductItem";
 import './ProductList.css';
 
 function ProductsListWithFilter(props){
-    console.log(props)
     return(
             <div className="row mb-4">
                 {

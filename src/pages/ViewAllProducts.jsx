@@ -34,7 +34,6 @@ class ViewAllProducts extends Component {
     }
 
     handler(arg) {
-        console.log(arg)
         this.setState({
             content: arg
         })

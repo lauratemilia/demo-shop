@@ -45,8 +45,6 @@ function BaseListSidebar(props) {
         })    
         
         handler(selectedItems)
-
-        console.log("getItemsForSelectedCateg: " + selectedItems)
     }
 
 
