@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import Layout from '../components/Layout';
 import products from '../utils/products.json'
 import ProductsListWithFilter from '../components/ProductsListWithFilter';
@@ -22,21 +22,28 @@ import "./ViewAllProducts.css";
     );
   };
 
-class ViewAllProducts extends Component {
+class ViewAllProducts extends Component {    
 
    constructor() {
         super();
+        this.handler = this.handler.bind(this)
         this.state = {
             categories: [],
             content: []
         }
     }
 
+    handler(arg) {
+        console.log(arg)
+        this.setState({
+            content: arg
+        })
+      }
+
     componentDidMount() {     
         const categoriesArr = Object.keys(products) ;
         const valuesArr = Object.values(products)
         this.setState({categories : categoriesArr, content : valuesArr});
-
     }
 
    render(){
@@ -46,7 +53,7 @@ class ViewAllProducts extends Component {
             {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
             <Layout>
            <div>
-              <div id="sidebar"><BaseListSidebar {...this.state}/></div>  
+              <div id="sidebar"><BaseListSidebar handler = {this.handler.bind(this)}/></div>  
                 <div id = "productList" className="container-fluid container-min-max-width">
                     <ProductsListWithFilter {...this.state} />                    
             </div>
@@ -58,4 +65,5 @@ class ViewAllProducts extends Component {
    }
 }
 
+ 
 export default withRouter(ViewAllProducts);
