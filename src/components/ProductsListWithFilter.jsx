@@ -6,16 +6,8 @@ function ProductsListWithFilter(props){
     return(
             <div className="row mb-4">
                 {
-                    props.content.map((category) => {
-                        return category.items.map(
-                            (item) => {
-                                return <ProductItem 
-                                    {...item}
-                                    key = {item.id}
-                                />
-                            }
-                        )
-                    })
+                    props.content.flatMap(category => category.items)
+                        .map(item => <ProductItem {...item} key = {item.id} />)
                 }   
             </div>
     );
