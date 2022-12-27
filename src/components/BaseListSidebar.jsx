@@ -5,7 +5,7 @@ function BaseListSidebar(props) {
 
         const categoriesArr = Object.keys(products) ;
         const valuesArr = Object.values(products)
-        const selectedCateg = [];
+        let selectedCateg = [];
         const selectedItems = [];
 
     //console.log(props.content)
@@ -25,16 +25,29 @@ function BaseListSidebar(props) {
 
     const filterByCategory = (e, category, handler) => {
         if(e.target.checked){
-                console.log(e.target.checked + " " + category)   
+                document.getElementById(e.target.id).setAttribute("checked", "");
                 selectedCateg.push(category);
         }
         else {
-          console.log(e.target.checked + " " + category)
-          selectedCateg.pop(category);                    
+          if(document.getElementById(e.target.id).hasAttribute("checked")){
+                document.getElementById(e.target.id).removeAttribute("checked")
+          }
+          selectedCateg.pop(category);     
          }         
     }
 
     const getItemsForSelectedCateg = (handler) => {
+        document.querySelectorAll(".categoryCheckbox").forEach((element) => {
+                if(element.hasAttribute("checked")){
+                        selectedCateg.push(element.value);
+                }
+        })
+
+        if(selectedCateg.length === 0){
+                handler(valuesArr)
+                return;
+        }
+        
         Object.keys(products).forEach(key => {
                 if(selectedCateg.includes(key)  )    {
                         selectedItems.push(products[key])
@@ -54,14 +67,15 @@ function BaseListSidebar(props) {
                                 
                             return <div key = {index}>
                                     <label htmlFor="category">{category}</label>
-                                    <input type="checkbox" name={category} id = {category} value = {category} onChange = {(e) => filterByCategory(e, category)} />
+                                    <input className="categoryCheckbox" type="checkbox" name={category} id = {category} value = {category} onChange = {(e) => filterByCategory(e, category)} />
                              </div> 
                         })
                     }    
            <button onClick = {() => getItemsForSelectedCateg(props.handler)}>Apply</button>               
            </div>
              
-           <div id="price-checkbox" className="filter-type"><span>Price</span>
+             {/* TODO: add priceand skill filters */}
+           {/* <div id="price-checkbox" className="filter-type"><span>Price</span>
            {    
                 getPriceArray().map((value, index) => {
                         return <div key = {index}>
@@ -70,7 +84,7 @@ function BaseListSidebar(props) {
                         </div>
                 })
            }                   
-            </div>
+            </div> */}
             {/* <div id="skill" className="filter-type"><span>Skill</span>
                     <label htmlFor="skill"></label>
                     <input type="checkbox" name="skill"/>
