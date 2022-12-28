@@ -6,7 +6,6 @@ import './Cart.css';
 import { ReactComponent as Close} from '../assets/icons/close.svg';
 
 function Cart(props) {
-    console.log(props)
     return(
         <Layout>
             <div className="cart-page container-fluid container-min-max-width

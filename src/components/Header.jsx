@@ -7,12 +7,14 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logout } from "../config/firebase";
 import { connect } from 'react-redux';
 
+function Header(props) {
 
-function Header() {
+    const {numberOfProducts } = props;
+
     // eslint-disable-next-line
     const [user, loading, error] = useAuthState(auth);
+
     function handleSignOut (){
-        console.log(user)
         logout();
     }
 
@@ -38,7 +40,10 @@ function Header() {
                     }
                   
                     {/* ShoppingCart este un SVG! */}
-                    <ShoppingCart className="ml-2"/>
+                    <Link to="/cart" className="d-flex">
+                        <ShoppingCart className="ml-2"/>                        
+                    </Link>
+                    <p className="ml-1 mb-0">{ numberOfProducts }</p>
                    </div>
                 </div>
             </div>
@@ -46,9 +51,14 @@ function Header() {
     );
 }
 
+
 function mapStateToProps(state) {
+
+    let count = 0
+    state.cart.products.forEach(product => count += product.quantity)
+   
     return {
-        numberOfProducts: state.cart.products.length
+        numberOfProducts: count
     }
 }
 
