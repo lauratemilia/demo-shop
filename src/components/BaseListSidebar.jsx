@@ -8,7 +8,6 @@ function BaseListSidebar(props) {
         let selectedCateg = [];
         const selectedItems = [];
 
-    //console.log(props.content)
     const getPriceArray = () => {
         const priceArr = []
         valuesArr.flatMap(object => object.items)
@@ -47,7 +46,7 @@ function BaseListSidebar(props) {
                 handler(valuesArr)
                 return;
         }
-        
+
         Object.keys(products).forEach(key => {
                 if(selectedCateg.includes(key)  )    {
                         selectedItems.push(products[key])

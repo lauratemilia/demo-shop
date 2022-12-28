@@ -6,13 +6,17 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 // Putem da aliasuri cand importam.
 import { BrowserRouter as Router} from 'react-router-dom';
+import {Provider} from "react-redux"
+import store from "./redux/store/store"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // Pentru a avea acces la Router in intreaga aplicatie, App devine copilul lui Router.
-<Router>
-    <App />
-</Router>
+<Provider store = {store}>
+    <Router>
+        <App />
+    </Router>
+</Provider>
 )
 
 // If you want your app to work offline and load faster, you can change
