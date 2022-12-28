@@ -1,5 +1,4 @@
 import React from 'react';
-import ProductList from './ProductList';
 import './ProductItem.css';
 import { connect } from 'react-redux';
 import {addToCart} from "./../redux/actions/cart"
@@ -25,7 +24,7 @@ function ProductsItem(props){
                     }
                 })}
                 >
-                Adauga <span><img src="https://img.icons8.com/emoji/24/null/shopping-cart-emoji.png"/></span>
+                Adauga <span><img src="https://img.icons8.com/emoji/24/null/shopping-cart-emoji.png" alt = ""/></span>
             </button>
            
         </div>
