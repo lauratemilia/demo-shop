@@ -12,6 +12,7 @@ import Login from './pages/Login';
 // import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import Reset from './pages/Reset';
+import Cart from './pages/Cart';
 import Page404 from './pages/Page404';
 import ViewAllProducts from './pages/ViewAllProducts';
 
@@ -38,6 +39,7 @@ class App extends React.Component {
             <Route path='/category/:categoryName' element={<Category/>}/>   
             <Route path='/all/*' element={<ViewAllProducts/>}/>  
             <Route path='/categories' element={<Categories/>}/>  
+            <Route path='/cart' element={<Cart />}/>
             <Route path='*' element={<Page404/>}/>
           </Routes>
       </div>

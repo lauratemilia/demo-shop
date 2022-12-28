@@ -35,3 +35,7 @@
         width: 100%;
        }
 }
+
+.btn span img {
+    margin-bottom:8px;
+}

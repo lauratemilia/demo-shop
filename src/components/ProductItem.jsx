@@ -1,10 +1,12 @@
 import React from 'react';
 import ProductList from './ProductList';
 import './ProductItem.css';
+import { connect } from 'react-redux';
+import {addToCart} from "./../redux/actions/cart"
 
 function ProductsItem(props){
 
-    const {name, price, image, currency, duration, offeredBy, description, skills} = props;
+    const {id, name, price, image, currency, duration, offeredBy, description, skills} = props;
 
     return (
         <div className="product-item col-4 d-flex flex-column align-items-center">
@@ -16,10 +18,25 @@ function ProductsItem(props){
                 <div id="skills"><span className="mb-3">Skills you'll gain:</span><p>{skills}</p></div>
                 <div id="price"><p>{ price + currency }</p></div>
             </div>
+            <button className = "btn btn-outline-dark"
+                onClick = {() => props.addToCart({
+                    product: {
+                        id, name, price, currency, image, duration, offeredBy, description, skills
+                    }
+                })}
+                >
+                Adauga <span><img src="https://img.icons8.com/emoji/24/null/shopping-cart-emoji.png"/></span>
+            </button>
            
         </div>
     );
 
 }
 
-export default ProductsItem;
+function mapDispatchToProps(dispatch){
+    return {
+        addToCart: (payoad) => dispatch(addToCart(payoad))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(ProductsItem);
