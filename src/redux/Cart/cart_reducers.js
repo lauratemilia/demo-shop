@@ -1,4 +1,4 @@
-import {ADD_TO_CART} from "./../actions/constants"
+import {ADD_TO_CART} from "./cart_constants"
 
 
 const initialState = {

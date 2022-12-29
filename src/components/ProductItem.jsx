@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductItem.css';
 import { connect } from 'react-redux';
-import {addToCart} from "./../redux/actions/cart"
+import {addToCart} from "../redux/Cart/cart_actions"
 
 function ProductsItem(props){
 
