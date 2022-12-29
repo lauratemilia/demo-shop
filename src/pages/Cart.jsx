@@ -46,6 +46,8 @@ function Cart(props) {
         </Layout>
     );
 }
+//TODO:: add remove from cart
+//refreshing the page or opening a new tab should not remove the content of the cart -> cookies
 
 
 function mapStateToProps(state) {
