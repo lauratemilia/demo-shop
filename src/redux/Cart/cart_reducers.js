@@ -1,4 +1,4 @@
-import {ADD_TO_CART} from "./cart_constants"
+import {ADD_TO_CART, REMOVE_FROM_CART} from "./cart_constants"
 
 
 const initialState = {
@@ -36,7 +36,12 @@ export function cartReducer(state = initialState, action){
                 return Object.assign({}, state, {
                     products: updatedProducts
                 })
-            }    
+            }   
+        case REMOVE_FROM_CART:
+            const remainingProducts = state.products.filter(product => product.id !== action.payload.product.id)
+            return Object.assign({}, state, {
+                products: remainingProducts
+            })
         default:
             return state;    
         }

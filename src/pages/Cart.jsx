@@ -3,7 +3,9 @@ import Layout from '../components/Layout';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Cart.css';
-import { ReactComponent as Close} from '../assets/icons/close.svg';
+import { ReactComponent as Close} from '../assets/icons/close-black.svg';
+import {removeFromCart} from "../redux/Cart/cart_actions"
+
 
 function Cart(props) {
     return(
@@ -30,7 +32,11 @@ function Cart(props) {
                                     <p className="w-25">{ product.quantity }</p>
                                     <div className="w-25 d-flex justify-content-center">
                                         <p className="mr-2">{ product.price * product.quantity } { product.currency }</p>
-                                        <Close />
+                                        <button id = "removeFromCart" className="btn"
+                                         onClick = {() => props.removeFromCart({
+                                            product: product
+                                        })}
+                                        ><Close /></button>
                                     </div>
                                 </div>
                             })
@@ -56,4 +62,10 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps, null)(Cart);
+function mapDispatchToProps(dispatch){
+    return {
+        removeFromCart: (payoad) => dispatch(removeFromCart(payoad))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

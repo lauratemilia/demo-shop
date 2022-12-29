@@ -6,3 +6,12 @@
 .cart-page svg {
     cursor: pointer;
 }
+
+#removeFromCart {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px;
+    height: 50%;
+    align-self: center;
+    margin-left: 5px;
+}
