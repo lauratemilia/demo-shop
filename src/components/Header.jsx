@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../assets/images/etna-logo.png';
  import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
+ import favoritesIcon from '../assets/icons/favorites.png';
+
 import './Header.css';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logout } from "../config/firebase";
@@ -38,6 +40,10 @@ function Header(props) {
                         ? <a href="/" className="logout h5" onClick={handleSignOut}>Logout</a> 
                         : <Link to="/login" className="h5">Login</Link>
                     }
+
+                    <Link to="/favorites" className="d-flex">
+                        <img src={favoritesIcon} alt="favorites" className="ml-2" width = "28" height ="31"/>                        
+                    </Link>
                   
                     {/* ShoppingCart este un SVG! */}
                     <Link to="/cart" className="d-flex">

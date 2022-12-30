@@ -1,9 +1,9 @@
 import React, { Component} from 'react';
-import Layout from '../components/Layout';
-import products from '../utils/products.json'
-import ProductsListWithFilter from '../components/ProductsListWithFilter';
+import Layout from '../../components/Layout';
+import products from '../../utils/products.json'
+import ProductsListWithFilter from '../../components/ProductsListWithFilter';
 import { useParams } from "react-router-dom";
-import BaseListSidebar from '../components/BaseListSidebar';
+import BaseListSidebar from '../../components/BaseListSidebar';
 import "./ViewAllProducts.css";
 
 

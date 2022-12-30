@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Layout from '../components/Layout';
-import products from '../utils/products.json';
+import Layout from '../../components/Layout';
+import products from '../../utils/products.json';
 import "./Home.css";
 
 class Home extends React.Component{

@@ -1,16 +1,16 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import './Cart.css';
-import { ReactComponent as Close} from '../assets/icons/close-black.svg';
-import {removeFromCart} from "../redux/Cart/cart_actions"
+import './Favorites.css';
+import { ReactComponent as Close} from '../../assets/icons/close-black.svg';
+import {removeFromFavorites} from "../../redux/Favorites/favorites_actions"
 
 
-function Cart(props) {
+function Favorites(props) {
     return(
         <Layout>
-            <div className="cart-page container-fluid container-min-max-width
+            <div className="favorites-page container-fluid container-min-max-width
                 d-flex flex-column justify-content-center align-items-center">
                {
                     props.products.length
@@ -32,8 +32,8 @@ function Cart(props) {
                                     <p className="w-25">{ product.quantity }</p>
                                     <div className="w-25 d-flex justify-content-center">
                                         <p className="mr-2">{ product.price * product.quantity } { product.currency }</p>
-                                        <button id = "removeFromCart" className="btn"
-                                         onClick = {() => props.removeFromCart({
+                                        <button id = "removeFromFavorites" className="btn"
+                                         onClick = {() => props.removeFromFavorites({
                                             product: product
                                         })}
                                         ><Close /></button>
@@ -58,14 +58,14 @@ function Cart(props) {
 
 function mapStateToProps(state) {
     return {
-        products: state.cart.products
+        products: state.favorites.products
     };
 }
 
 function mapDispatchToProps(dispatch){
     return {
-        removeFromCart: (payoad) => dispatch(removeFromCart(payoad))
+        removeFromFavorites: (payoad) => dispatch(removeFromFavorites(payoad))
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Favorites);
