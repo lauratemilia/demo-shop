@@ -1,21 +1,9 @@
 
 import {ADD_TO_CART, REMOVE_FROM_CART} from "./cart_constants"
+import { createAction } from "@reduxjs/toolkit";
 
-function addToCart(payload){
-    return {
-        type: ADD_TO_CART,
-        payload
-    }
+const addToCart = createAction(ADD_TO_CART);
+const removeFromCart = createAction(REMOVE_FROM_CART);
 
-}
-
-function removeFromCart(payload){
-    console.log(payload)
-
-    return {
-        type: REMOVE_FROM_CART,
-        payload
-    }
-}
 
 export {addToCart, removeFromCart};
