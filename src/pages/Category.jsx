@@ -30,7 +30,6 @@ class Category extends Component {
     }
 
     componentDidMount(){         
-        console.log(this.props.params.categoryName);
         const categoryName = this.props.params.categoryName;
        
         this.setState({ category: products[categoryName],

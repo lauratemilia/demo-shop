@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../assets/images/etna-logo.png';
- import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
- import favoritesIcon from '../assets/icons/favorites.png';
-
+import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
+import favoritesIcon from '../assets/icons/favorites.png';
 import './Header.css';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logout } from "../config/firebase";

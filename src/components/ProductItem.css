@@ -39,3 +39,7 @@
 .btn span img {
     margin-bottom:8px;
 }
+
+.hidden {
+    visibility: hidden;
+}
