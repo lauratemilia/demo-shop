@@ -5,6 +5,7 @@ import {addToCart} from "../redux/Cart/cart_actions"
 import {removeFromFavorites, addToFavorites} from "../redux/Favorites/favorites_actions"
 
 
+
 function ProductsItem(props){
 
     const {id, name, price, image, currency, duration, offeredBy, description, skills} = props;
@@ -27,24 +28,14 @@ function ProductsItem(props){
         })
     }
 
-    //TODO: fix favorites button on favorites page
-    const productIsOnFavoritesPage = (id) => {
-        console.log(window.location.href.includes("favorites"));
-        if(window.location.href.includes("favorites")){
-            document.querySelector("#product-" + id + " .addToFavorites span img").classList.add("add-to-favorites-active");
-        }else{
-            console.log("not on favorites page")
-        }
-    }
-
-    const checkIfFavorite = (event) => {
+    const checkIfFavorite = (event, id) => {
         return event.target.classList.contains("add-to-favorites-active");
     }
 
     const toggleFavorites = (event, id) => {
         event.preventDefault();
 
-        const isFavorite = checkIfFavorite(event);
+        const isFavorite = checkIfFavorite(event, id);
         if(isFavorite){
             document.querySelector("#product-" + id + " .addToFavorites span img").classList.remove("add-to-favorites-active");
             removeFromFavorites();

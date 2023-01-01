@@ -6,7 +6,9 @@ import './Favorites.css';
 import ProductItem from "../../components/ProductItem"
 
 
+
 function Favorites(props) {
+
     return(
         <Layout>
             <div id="favorites-page" className="container-fluid container-min-max-width
