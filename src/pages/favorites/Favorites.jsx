@@ -9,27 +9,25 @@ import ProductItem from "../../components/ProductItem"
 function Favorites(props) {
     return(
         <Layout>
-
-            <div className="favorites-page container-fluid container-min-max-width
+            <div id="favorites-page" className="container-fluid container-min-max-width
                 d-flex flex-column justify-content-center align-items-center">
                {
                     props.products.length
                     ? <div className="row mb-4">
-                    {
-                        props.products.map((product) => {
-                            return <ProductItem 
-                                {...product}
-                                key = {product.id}
-                            />
-                        })
-                    }   
-                </div>
+                            {
+                                props.products.map((product) => {    
+                                    return <ProductItem 
+                                            {...product}
+                                            key = {product.id}
+                                        />            
+                                })
+                            }                               
+                        </div> 
                     : <div className="d-flex flex-column align-items-center">
                         <p className="h3">Nu ai produse in cart!</p>
-                        <Link to="/"><button className="btn btn-outline-dark">Inapoi la home</button></Link>
+                        <Link to="/all"><button className="btn btn-outline-dark">Inapoi la pagina de produse</button></Link>
                     </div>
-                }
-                    
+                }                             
             </div> 
         </Layout>
     );

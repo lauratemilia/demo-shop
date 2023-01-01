@@ -27,15 +27,24 @@ function ProductsItem(props){
         })
     }
 
+    //TODO: fix favorites button on favorites page
+    const productIsOnFavoritesPage = (id) => {
+        console.log(window.location.href.includes("favorites"));
+        if(window.location.href.includes("favorites")){
+            document.querySelector("#product-" + id + " .addToFavorites span img").classList.add("add-to-favorites-active");
+        }else{
+            console.log("not on favorites page")
+        }
+    }
+
     const checkIfFavorite = (event) => {
         return event.target.classList.contains("add-to-favorites-active");
     }
 
     const toggleFavorites = (event, id) => {
-        console.log("id: " + id)
         event.preventDefault();
+
         const isFavorite = checkIfFavorite(event);
-        console.log("isFavorite: " + isFavorite)
         if(isFavorite){
             document.querySelector("#product-" + id + " .addToFavorites span img").classList.remove("add-to-favorites-active");
             removeFromFavorites();
@@ -66,10 +75,11 @@ function ProductsItem(props){
                 Adauga <span><img src="https://img.icons8.com/emoji/24/null/shopping-cart-emoji.png" alt = ""/></span>
             </button>
 
-            <button className="addToFavorites btn btn-outline-dark" onClick={(event) => {toggleFavorites(event, props.id)}}><span><img alt="" width="26" height="31"/></span></button>
-
-           </div>
-           
+            <button className="addToFavorites btn btn-outline-dark" 
+                onClick={(event) => {toggleFavorites(event, props.id)}}>
+                    <span><img alt="" width="26" height="31"/></span>
+            </button>
+         </div>           
         </div>
     );
 
@@ -86,8 +96,6 @@ function mapDispatchToProps(dispatch){
         addToCart: (payoad) => dispatch(addToCart(payoad)),
         removeFromFavorites: (payoad) => dispatch(removeFromFavorites(payoad)),
         addToFavorites: (payoad) => dispatch(addToFavorites(payoad))
-
-        
     }
 }
 
