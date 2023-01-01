@@ -2,26 +2,43 @@
     max-width: 100%;
     max-height: 250px;
 }
-#details{
+.details{
     width: 100%;
 }
 
-#price {
+.price {
     width: 15%;
     float: right;
 }
 
-#skills {
+.skills {
     width: 74%;
 }
 
-#skills span {
+.skills span {
     font-weight: 600;
 }
 
-#details div {
+.details div {
     display: inline-block;
     padding: 5px;
+}
+
+.cart span img {
+    margin-bottom:8px;
+}
+
+.addToFavorites .btn {
+    border: 1px solid black;
+    height: 46px;
+}
+
+.addToFavorites span img {
+    content: url("../assets/icons/red_hollow.png");
+}
+
+.addToFavorites span img.add-to-favorites-active {
+    content: url("../assets/icons/red_filled.png");
 }
 
 @media screen and (max-width: 1200px) {
@@ -36,10 +53,3 @@
        }
 }
 
-.btn span img {
-    margin-bottom:8px;
-}
-
-.hidden {
-    visibility: hidden;
-}
