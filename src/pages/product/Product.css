@@ -1,0 +1,49 @@
+/* CSS-ul pentru pagina de produs */
+.product-page .image-wrapper {
+    width: 400px;
+    height: 400px;
+    /* ATENTIE! Am sters clasa de bootstrap din Product.js(justify-content-center), intrucat
+    ea se punea cu !important si nu mai putea fi suprascrisa de stilizarea pe mobile! */
+    /* In sachimb, avem proprietatea justify-content cu doua valori: una aici si una la @media */
+    justify-content: center;
+}
+
+.product-page .image-wrapper img {
+    height: 100%;
+}
+
+/* Stilizarea pe mobile */
+@media (max-width: 768px) {
+    /* ATENTIE! Se suprascrie stilizarea de mai sus, in cazul in care ecranul are mai putin de 768px */
+    .product-page .image-wrapper {
+        width: 100%;
+        height: auto;
+        justify-content: start;
+    }
+
+    .product-page .image-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-page .product-info {
+        flex-direction: column;
+    }
+
+    .product-page .product-details {
+        margin-top: 1.5rem;
+    }
+}
+
+.addToFavorites .btn {
+    border: 1px solid black;
+    height: 46px;
+}
+
+.addToFavorites span img {
+    content: url("../../assets/icons/red_hollow.png");
+}
+
+.addToFavorites span img.add-to-favorites-active {
+    content: url("../../assets/icons/red_filled.png");
+}

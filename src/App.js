@@ -5,6 +5,7 @@ import './utils/utility-classes.css';
 import { Routes, Route } from "react-router-dom";
 import Category from './pages/Category';
 import Home from './pages/home/Home';
+import Product from './pages/product/Product';
 import Categories from './pages/Categories';
 import About from './pages/About';
 import Terms from './pages/Terms';
@@ -42,6 +43,7 @@ class App extends React.Component {
             <Route path='/categories' element={<Categories/>}/>  
             <Route path='/cart' element={<Cart />}/>
             <Route path='/favorites' element={<Favorites />}/>
+            <Route path="/product/:productId" element={<Product />}/>
             <Route path='*' element={<Page404/>}/>
           </Routes>
       </div>

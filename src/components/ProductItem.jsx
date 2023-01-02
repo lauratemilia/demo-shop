@@ -3,8 +3,7 @@ import './ProductItem.css';
 import { connect } from 'react-redux';
 import {addToCart} from "../redux/Cart/cart_actions"
 import {removeFromFavorites, addToFavorites} from "../redux/Favorites/favorites_actions"
-
-
+import {Link} from 'react-router-dom';
 
 function ProductsItem(props){
 
@@ -62,7 +61,9 @@ function ProductsItem(props){
 
     return (
         <div id={"product-".concat(props.id)} className="product-item col-4 d-flex flex-column align-items-center" onLoad={(e) => chechkIfIsFavorite(e)}>
-            <img src={image} alt="productPhoto" className="mb-2"/>
+            <Link to={`/product/${props.id}`}>
+                <img src={image} alt="productPhoto" className="mb-2"/>
+            </Link>
             <div className="title">
                 <h5 className="mb-1">{ name }</h5>
             </div>
