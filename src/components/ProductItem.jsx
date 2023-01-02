@@ -52,7 +52,7 @@ function ProductsItem(props){
         ){            
             document.querySelector("#product-" + id + " .addToFavorites span img").classList.add("add-to-favorites-active");
         } 
-        else if(window.location.href.includes("all")){
+        else if(window.location.href.includes("all") || window.location.href.includes("category/")){
             props.favorites.forEach(item => {
                 document.querySelector("#product-" + item.id + " .addToFavorites span img").classList.add("add-to-favorites-active");
             }) 
