@@ -9,6 +9,10 @@
     width: 74%;
 }
 
+.product-item {
+    margin-top:20px;
+}
+
 .filter-type div {
     margin-left: 10px;
 

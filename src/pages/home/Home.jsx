@@ -26,19 +26,23 @@ class Home extends React.Component{
                 <div id="home-menu" className="container-fluid container-min-max-width">
                     {/* row vine la pachet cu col-6. Vezi grid-ul bootstrap pentru detalii! */}
                     <div className="row">
-                        <Link to={`/categories`}>
-                            <div className="w-100">
-                                <img src="https://imgpile.com/images/b3FKDM.jpg" alt="categories" className="w-100"/>
-                            </div>
-                            <h2 className="h4 my-1"><strong>Categories</strong></h2>                
-                        </Link>
+                       <div className='col-lg-6 col-md-6 col-xs-12'>
+                            <Link to={`/categories`}>
+                                <div className="w-100">
+                                    <img src="https://imgpile.com/images/b3FKDM.jpg" alt="categories" className="w-100"/>
+                                </div>
+                                <h2 className="h4 my-1"><strong>Categories</strong></h2>                
+                            </Link>
+                       </div>
 
-                        <Link to={`/all`}>
-                            <div className="w-100">
-                                <img src="https://imgpile.com/images/b3Ftjk.jpg" alt="all" className="w-100"/>
-                            </div>
-                            <h2 className="h4 my-1"><strong>All Our Courses</strong></h2>                
-                        </Link>
+                       <div className='col-lg-6 col-md-6 col-xs-12'>
+                            <Link to={`/all`}>
+                                <div className="w-100">
+                                    <img src="https://imgpile.com/images/b3Ftjk.jpg" alt="all" className="w-100"/>
+                                </div>
+                                <h2 className="h4 my-1"><strong>All Our Courses</strong></h2>                
+                            </Link>
+                       </div>
                         
                     </div>
                 </div>

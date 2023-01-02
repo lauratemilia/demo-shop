@@ -9,7 +9,7 @@ function HomeCategory(props) {
 
     return(
         // col-6 => div-ul cu aceasta clasa va ocupa 6 pozitii din 12(jumatate din spatiu) Din nou, vezi teorie Bootstrap!
-        <div className="col-6 mb-3">
+        <div className="col-lg-6 col-md-6 col-xs-12 mb-3">
             {/* Vrem ca atunci cand dam click pe componenta de categorie sa fim dusi in pagina respectivei categorii.
             Asadar, trebuie sa punem un link, care sa contina numele categoriei. */}
             <Link to={`/category/${route}`}>
