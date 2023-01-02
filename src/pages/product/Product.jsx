@@ -93,34 +93,38 @@ class Product extends React.Component {
                     <div className="product-info d-flex">
                         <div className="image-wrapper d-flex mr-5">
                             <img src={product.image} alt="Product presentation"/>
+                            
                         </div>
+                        
                         <div className="product-details">
                             <p className="h3 text-danger">{product.price} {product.currency}</p>
-                            <button
-                                className="btn btn-dark mb-4 font-weight-bold"
-                                onClick={() => {
-                                    this.props.addToCart({
-                                        product: {
-                                            id: product.id,
-                                            name: product.name,
-                                            price: product.price,
-                                            currency: product.currency,
-                                            image: product.image
-                                        }
-                                    })
-                                }}
-                            >
-                                Adaugă în coș
-                            </button>
+                            <div className="product-buttons">
+                                <button
+                                    className="addToCart btn btn-dark mb-4 font-weight-bold"
+                                    onClick={() => {
+                                        this.props.addToCart({
+                                            product: {
+                                                id: product.id,
+                                                name: product.name,
+                                                price: product.price,
+                                                currency: product.currency,
+                                                image: product.image
+                                            }
+                                        })
+                                    }}
+                                >
+                                    Adaugă în coș
+                                </button>
+                                <button className="addToFavorites btn btn-outline-dark mb-1" 
+                                    onClick={(event) => {this.toggleFavorites(event, product.id)}}>
+                                    <span><img alt="" width="26" height="31"/></span>
+                                </button>    
+                            </div>
                             <p><span className="font-weight-bold">OferredBy</span>: {product.offeredBy}</p>
                             <p><span className="font-weight-bold">Duration</span>: {product.duration}</p>
                             <p><span className="font-weight-bold">Skills</span>: {product.skills}</p>
                             <p className="font-weight-bold mb-1">Descriere:</p>
                             <p>{product.description}</p>
-                            <button className="addToFavorites btn btn-outline-dark" 
-                             onClick={(event) => {this.toggleFavorites(event, product.id)}}>
-                             <span><img alt="" width="26" height="31"/></span>
-                         </button>
                         </div>
                         
                     </div>

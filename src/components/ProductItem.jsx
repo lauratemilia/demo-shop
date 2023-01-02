@@ -8,10 +8,7 @@ import {Link} from 'react-router-dom';
 function ProductsItem(props){
 
     const {id, name, price, image, currency, duration, offeredBy, description, skills} = props;
-    let isFavorite = {
-        items: []
-    };
-
+    
     const addToFavorites = () => {
         props.addToFavorites({
             product: {
