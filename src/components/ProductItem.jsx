@@ -9,9 +9,11 @@ import {removeFromFavorites, addToFavorites} from "../redux/Favorites/favorites_
 function ProductsItem(props){
 
     const {id, name, price, image, currency, duration, offeredBy, description, skills} = props;
+    let isFavorite = {
+        items: []
+    };
 
     const addToFavorites = () => {
-        console.log("add")
         props.addToFavorites({
             product: {
                 id, name, price, currency, image, duration, offeredBy, description, skills
@@ -20,7 +22,6 @@ function ProductsItem(props){
     }
 
     const removeFromFavorites = () => {
-        console.log("remove")
         props.removeFromFavorites({
             product: {
                 id, name, price, currency, image, duration, offeredBy, description, skills
@@ -45,8 +46,22 @@ function ProductsItem(props){
         }
     }
 
+    const chechkIfIsFavorite = (e) => {
+
+        if(window.location.href.includes("favorites") && !e.target.classList.contains("add-to-favorites-active")
+        ){            
+            document.querySelector("#product-" + id + " .addToFavorites span img").classList.add("add-to-favorites-active");
+        } 
+        else if(window.location.href.includes("all")){
+            props.favorites.forEach(item => {
+                document.querySelector("#product-" + item.id + " .addToFavorites span img").classList.add("add-to-favorites-active");
+            }) 
+            
+        }
+    }
+
     return (
-        <div id={"product-".concat(props.id)} className="product-item col-4 d-flex flex-column align-items-center">
+        <div id={"product-".concat(props.id)} className="product-item col-4 d-flex flex-column align-items-center" onLoad={(e) => chechkIfIsFavorite(e)}>
             <img src={image} alt="productPhoto" className="mb-2"/>
             <div className="title">
                 <h5 className="mb-1">{ name }</h5>

@@ -7,21 +7,16 @@ const initialState = {
 export function favoritesReducer(state = initialState, action){    
     switch(action.type){
         case ADD_TO_FAVORITES:
-            console.log("add to favorites: " + {...state.products})
             if(state.products.some( item => {
                 const result = state.products.find(prod => prod.id === action.payload.product.id)
                 return result ? true : false 
             })){
-                console.log("already in favorites")
-
                 return Object.assign({}, state, {
                     products: [
                         ...state.products
                     ]
                 })
             } else {
-                console.log("adding now to favorites")
-
                 return Object.assign({}, state, {
                     products: [
                         ...state.products,
@@ -32,7 +27,6 @@ export function favoritesReducer(state = initialState, action){
                 })
             }            
         case REMOVE_FROM_FAVORITES:
-            console.log("remove from favorites")
             const remainingProducts = state.products.filter(product => product.id !== action.payload.product.id)
             return Object.assign({}, state, {
                 products: remainingProducts

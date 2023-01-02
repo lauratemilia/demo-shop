@@ -13,8 +13,8 @@ import { useCookies } from 'react-cookie';
 function Header(props) {
 
     const {numberOfProducts , numberOfFavorites} = props;
-    const [favoritesCookies, setFavoritesCookie, removeFavoriteCookie] = useCookies(['favorites']);
-    const [inCartCookies, setCartCookie, removeCartCookie] = useCookies(['inCart']);
+    const [favoritesCookies, setFavoritesCookie] = useCookies(['favorites']);
+    const [inCartCookies, setCartCookie] = useCookies(['inCart']);
 
 
     // eslint-disable-next-line
@@ -25,9 +25,8 @@ function Header(props) {
     }
 
     function saveCookies(){
-        setFavoritesCookie("favorites", props.favorites, {path: "/", expires : new Date(new Date().getTime() + 60 * 60 * 1000), secure: true })
-        setCartCookie("inCart", props.inCart, {path: "/", expires : new Date(new Date().getTime() + 60 * 60 * 1000), secure: true })
-        console.log(props.favorites)
+        setFavoritesCookie("favorites", props.favorites, {path: "/", expires : new Date(new Date().getTime() + 60 * 60 * 1000), secure: true, domain : "localhost" })
+        setCartCookie("inCart", props.inCart, {path: "/", expires : new Date(new Date().getTime() + 60 * 60 * 1000), secure: true, domain : "localhost" })
     }
 
     return(             
