@@ -26,6 +26,9 @@
     background-color: black;
   }
   .loginGoogle {
+    background-color: #0647b0;
+  }
+  .loginFacebook {
     background-color: #4285f4;
   }
   .login div {

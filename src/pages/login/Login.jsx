@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {Link, useNavigate} from 'react-router-dom';
-import { auth, logInWithEmailAndPassword, signInWithGoogle } from "../../config/firebase";
+import { auth, logInWithEmailAndPassword, signInWithGoogle, signInWithFb } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "./Login.css";
 
@@ -53,6 +53,9 @@ function Login() {
                     </button>
                     <button className="loginBtn loginGoogle" onClick={signInWithGoogle}>
                     Login with Google
+                    </button>
+                    <button className="loginBtn loginFacebook" onClick={signInWithFb}>
+                    Login with Facebook
                     </button>
                     <div>
                     <Link to="/reset">Forgot Password</Link>
